@@ -1,0 +1,23 @@
+%facts
+salary(vaishnavi,90000).
+salary(sanchita,450000).
+salary(isha,50000).
+salary(aditi,60000).
+salary(janhavi,20000).
+
+%rule
+highest(X):-
+    Salary(X,S),
+    S>=70000.
+
+medium(X):-
+    Salary(X,S),
+    S=40000.
+
+lowest(X):-
+    Salary(X,S),
+    S<40000.
+
+
+
+
